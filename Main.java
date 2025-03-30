@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        /*System.out.println("Exercice 1 : ");
+        System.out.println("Exercice 1 : ");
         DateduJour d1 = new DateduJour();
         d1.setJour(27);
         d1.setAnnee(2022);
@@ -79,7 +79,7 @@ public class Main {
 
         Vehicule vehicule2 = new Vehicule();
         System.out.println(vehicule2.toString());
-*/
+
 
 
     }
