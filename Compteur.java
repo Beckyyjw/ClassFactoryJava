@@ -22,12 +22,6 @@ public class Compteur {
     }
 
     public void reserPartiel(){
-
-        /*if(partiel == 1000){
-            partiel = 0;
-        } else if (partiel > 1000){
-            partiel = 0;
-        }*/ // pour reset le partiel des 1000
         partiel = 0;
     }
 

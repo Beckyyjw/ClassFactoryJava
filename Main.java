@@ -36,50 +36,58 @@ public class Main {
         System.out.println("####### TESTS DES VEHICULES #######");
         Vehicule vehicule1 = new Vehicule(0.053);
 
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.faireLePlein();
         vehicule1.rouler(0.0);
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.rouler(300.0);
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.rouler(643.39);
         vehicule1.faireLePlein();
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.rouler(200.0);
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.rouler(540.1886);
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.faireLePlein();
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.rouler(260);
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.mettreDeLessence(6.0);
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         vehicule1.mettreDeLessence(16.0);
-        System.out.println(vehicule1.toString());
-        System.out.println(" ");
+        vehicule1.afficherEtat();
 
         Vehicule vehicule2 = new Vehicule();
-        System.out.println(vehicule2.toString());
+        vehicule2.setNumeroImmatriculation(1);
+        vehicule2.afficherEtat();
 
+        System.out.println("####### TESTS GARAGE #######");
+
+        Garage garage = new Garage(10);
+
+        garage.ajoutVehicule(vehicule1);
+        garage.ajoutVehicule(vehicule2);
+
+        System.out.println("État initial du garage :");
+        System.out.println(garage);
+
+        garage.supprimerVehicule(600);
+
+        System.out.println("État du garage après suppression des véhicules avec plus de 600 km :");
+        System.out.println(garage);
+
+        System.out.println("************************************************+*****");
+        System.out.println("Exercice 3 : ");
 
 
     }

@@ -11,6 +11,10 @@ public class Vehicule {
         return numeroImmatriculation;
     }
 
+    public void setNumeroImmatriculation(int numeroImmatriculation) {
+        this.numeroImmatriculation = numeroImmatriculation;
+    }
+
     public Compteur getCompteur(){
         return compteur;
     }
@@ -42,10 +46,10 @@ public class Vehicule {
             return;
         }
 
-        // Vérification si la quantité est une fraction de la capacité du réservoir
+        /*// Vérification si la quantité est une fraction de la capacité du réservoir
         if (capacite % quantite != 0) {
             System.out.println("⚠ Attention : La quantité ajoutée n'est pas une fraction exacte de la capacité.");
-        }
+        }*/
 
         if (jauge + quantite <= capacite) {
             jauge += quantite;
@@ -72,9 +76,14 @@ public class Vehicule {
         return compteur.getTotaliseur();
     }
 
+    public void afficherEtat() {
+        System.out.println(this);
+        System.out.println(); // Ajoute une ligne vide
+    }
+
     @Override
     public String toString() {
-        return String.format("Vehicule %d : %s ;; jauge = %.2f", registre, compteur.toString(), jauge);
+        return String.format("Vehicule %d : %s ;; jauge = %.2f", numeroImmatriculation, compteur.toString(), jauge);
     }
 
 }
