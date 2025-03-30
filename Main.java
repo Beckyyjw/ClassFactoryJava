@@ -86,8 +86,5 @@ public class Main {
         System.out.println("État du garage après suppression des véhicules avec plus de 600 km :");
         System.out.println(garage);
 
-        System.out.println("************************************************+*****");
-        System.out.println("Exercice 3 : ");
-
     }
 }

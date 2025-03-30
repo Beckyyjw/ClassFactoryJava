@@ -48,7 +48,7 @@ public class Pile {
      *
      * @return L'élément au sommet de la pile ou -1 si la pile est vide.
      */
-    public int deplier(){
+    public int depiler(){
         if(nb > 0){
             nb --;
             return elements[nb];
@@ -108,9 +108,7 @@ public class Pile {
         }
 
         // Vérification si l'objet est de type Pile
-        if(null == o || getClass() != o.getClass()){
-            return false;
-        }
+        if(null == o || getClass() != o.getClass()){return false;}
 
         Pile otherPile = (Pile) o;
 
